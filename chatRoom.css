@@ -1,0 +1,89 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+#container {
+    margin: 0 auto;
+    width: 600px;
+    height: 100vh;
+    border: 1px solid black;
+    text-align: center;
+}
+#chat-room {
+    width: 600px;
+    height: 90vh;
+    background-color: rgb(66, 65, 65);
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+#chat-holder {
+    width: 600px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: cornsilk;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: rgba(233, 230, 230, 0.781);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(179, 157, 38, 0.932);  
+    border-radius: 10px;
+    }
+  
+::-webkit-scrollbar-thumb:hover {
+    transform: scale(1.1);  
+}
+input {
+    width: 500px;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+button {
+    width: 100px;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+button:hover {
+    box-shadow: 0 0 10px grey;
+    transition: all 0.5s;
+}
+.chat-box {
+    max-width: 380px;
+    min-width: 120px;
+    height: auto;
+    background-color: burlywood;
+    float: left;
+    margin: 8px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    align-self: flex-start;
+    word-wrap: break-word;
+    text-align: left;
+}
+.self {
+    align-self: flex-end;
+    background: rgb(168, 127, 73);
+    color: rgb(212, 208, 208);
+    border-radius: 10px;
+    word-wrap: break-word;
+    text-align: left;
+    max-width: 380px;
+    min-width: 120px;
+}
+.name-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+.time-chat {
+    text-align: right;
+    font-size: 8px;
+    font-style: italic;
+}

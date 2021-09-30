@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room 01</title>
+    <style></style>
+    <link rel="stylesheet" href="./chatRoom.css">
+</head>
+<body>
+    <div id="container">
+        <div id="chat-room"></div>
+        <div id="chat-holder">
+            <!-- <input id="name-input" type="text" placeholder="Name"> -->
+            <input id="msg-input" type="text" placeholder="Message">
+            <button onclick="sendMsg()">Send</button>
+        </div>
+    </div>
+    <!-- firebase app -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <!-- firebase real time -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
+    <script src="./chatRoom.js"></script>
+</body>
+</html>
